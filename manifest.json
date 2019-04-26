@@ -1,0 +1,23 @@
+{
+  "manifest_version": 23,
+  "name": "mbcrump",
+  "description": "Displays stars for a repo that you set",
+  "version": "0.1",
+  "icons": {
+    "16": "azttlogo.png",
+    "48": "azttlogo.png",
+    "128": "azttlogo.png"
+  },
+  "permissions": [
+    "alarms",
+    "background"
+  ],
+  "browser_action": {
+    "default_icon": "azttlogo.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "scripts": [ "alert.js" ],
+    "persistent": false
+  }
+}
